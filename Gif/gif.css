@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100vw;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid lightgrey;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 1.5vw;
+  margin-bottom: 2vh;
+}
+nav {
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #13fc97;
+  color: #151d2f;
+  border-radius: 0.5em;
+  font-weight: 500;
+}
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  width: 100%;
+  max-width: 50em;
+  margin: 1em auto;
+  padding: 0.5em;
+}
+.search-container input {
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: 400;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container {
+  background-color: #2b304d;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5em;
+  border-radius: 0.5em;
+}
+.container img {
+  width: 100%;
+}
+.container button {
+  margin-top: 1em;
+  padding: 1em 0;
+}
+.loader {
+  display: none;
+  height: 15em;
+  width: 15em;
+  border: 3em solid #2b304d;
+  border-radius: 50%;
+  border-top-color: #13fc97;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  animation: spin 3s infinite;
+}
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    margin: 0.7em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
