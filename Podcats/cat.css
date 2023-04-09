@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 66vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  color: chartreuse;
+  margin: 4vh 0vh;
+}
+
+button {
+  background-color: rgb(5 241 241);
+  margin: 20px;
+  padding: 16px 32px 16px 32px;
+  border: 1px solid #264924;
+  border-radius: 46px;
+  font-weight: 800;
+  font-size: larger;
+  color: #ce0c0c;
+}
+
+#btn {
+  cursor: pointer;
+  background-color: #333;
+  color: aliceblue;
+}
+
+body {
+  background: #d53369; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cbad6d,
+    #d53369
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cbad6d,
+    #d53369
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  width: 100vw;
+  background-color: #1f1f1f;
+  border-bottom: 1px solid lightgrey;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 1.5vw;
+  margin-bottom: 2vh;
+}
+nav {
+  display: flex;
+  height: 7vh;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
